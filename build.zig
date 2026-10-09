@@ -20,6 +20,11 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
+    const zts_dep = b.dependency("tree_sitter", .{
+        .target = target,
+        .optimize = optimize,
+    });
+
     const exe_mod = b.createModule(.{
         .root_source_file = b.path("src/main.zig"),
         .target = target,
@@ -28,6 +33,7 @@ pub fn build(b: *std.Build) void {
             .{ .name = "zlua", .module = lua_dep.module("zlua") },
             .{ .name = "lsp", .module = lsp_dep.module("lsp") },
             .{ .name = "zio", .module = zio_dep.module("zio") },
+            .{ .name = "zts", .module = zts_dep.module("tree_sitter") },
         },
     });
 
