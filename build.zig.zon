@@ -12,6 +12,10 @@
             .url = "git+https://github.com/pierrelgol/lsp-kit.git#f49513f0aa43624f38daf63d5a1f4cc206e2e6c8",
             .hash = "lsp_kit-0.1.0-bi_PL_Q1DAC7TzpARzQluWK89soCEqvircKxmmbANEIY",
         },
+        .zio = .{
+            .url = "git+https://github.com/lalinsky/zio?ref=v0.19.0#281d969fdefe04f2e8b28d1f45fac0011f881c73",
+            .hash = "zio-0.19.0-xHbVVE3ZKwCUJskjZ2stxrVnqb9GnnFr2FmLmrGLLJB9",
+        },
     },
     .paths = .{
         "build.zig",

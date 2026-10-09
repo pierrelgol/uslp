@@ -15,6 +15,11 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
+    const zio_dep = b.dependency("zio", .{
+        .target = target,
+        .optimize = optimize,
+    });
+
     const exe_mod = b.createModule(.{
         .root_source_file = b.path("src/main.zig"),
         .target = target,
@@ -22,6 +27,7 @@ pub fn build(b: *std.Build) void {
         .imports = &.{
             .{ .name = "zlua", .module = lua_dep.module("zlua") },
             .{ .name = "lsp", .module = lsp_dep.module("lsp") },
+            .{ .name = "zio", .module = zio_dep.module("zio") },
         },
     });
 
