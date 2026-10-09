@@ -25,7 +25,12 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
-    const known_folders_dep = b.dependency("know_folders", .{
+    const known_folders_dep = b.dependency("known_folders", .{
+        .target = target,
+        .optimize = optimize,
+    });
+
+    const toml_dep = b.dependency("toml", .{
         .target = target,
         .optimize = optimize,
     });
@@ -39,7 +44,8 @@ pub fn build(b: *std.Build) void {
             .{ .name = "lsp", .module = lsp_dep.module("lsp") },
             .{ .name = "zio", .module = zio_dep.module("zio") },
             .{ .name = "zts", .module = zts_dep.module("tree_sitter") },
-            .{ .name = "kf", .module = known_folders_dep.module("know-folders") },
+            .{ .name = "kf", .module = known_folders_dep.module("known-folders") },
+            .{ .name = "toml", .module = toml_dep.module("toml") },
         },
     });
 
