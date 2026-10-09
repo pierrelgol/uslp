@@ -10,12 +10,18 @@ pub fn build(b: *std.Build) void {
         .lang = .lua55,
     });
 
+    const lsp_dep = b.dependency("lsp_kit", .{
+        .target = target,
+        .optimize = optimize,
+    });
+
     const exe_mod = b.createModule(.{
         .root_source_file = b.path("src/main.zig"),
         .target = target,
         .optimize = optimize,
         .imports = &.{
             .{ .name = "zlua", .module = lua_dep.module("zlua") },
+            .{ .name = "lsp", .module = lsp_dep.module("lsp") },
         },
     });
 

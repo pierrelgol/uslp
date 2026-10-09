@@ -8,6 +8,10 @@
             .url = "git+https://github.com/natecraddock/ziglua#8b2c14e0f9f89a9407dd7dd91752c7d8fd03cb62",
             .hash = "zlua-0.1.0-hGRpC8yYBQAtI5hy60lb1vK9Tc7s-Ouu0aMFe2Kdc3_s",
         },
+        .lsp_kit = .{
+            .url = "git+https://github.com/pierrelgol/lsp-kit.git#f49513f0aa43624f38daf63d5a1f4cc206e2e6c8",
+            .hash = "lsp_kit-0.1.0-bi_PL_Q1DAC7TzpARzQluWK89soCEqvircKxmmbANEIY",
+        },
     },
     .paths = .{
         "build.zig",
