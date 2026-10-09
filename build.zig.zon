@@ -20,6 +20,10 @@
             .url = "git+https://github.com/pierrelgol/zig-tree-sitter#2ffef82a12d0305e646ade0e67c693cabc661e05",
             .hash = "tree_sitter-0.26.0-8heIf1HEAQCVBaR2wlDhGTw16Ttn1bzERVIwlzNcyO6b",
         },
+        .known_folders = .{
+            .url = "git+https://github.com/ziglibs/known-folders.git#6da0d0c41b78b9ed2d34fa364fcb81b5ebece6c4",
+            .hash = "known_folders-0.0.0-Fy-PJiDLAAB98m3uYUzatrTb2mO2fpvwx2zpSroEtfbO",
+        },
     },
     .paths = .{
         "build.zig",

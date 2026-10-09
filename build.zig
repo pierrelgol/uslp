@@ -25,6 +25,11 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
+    const known_folders_dep = b.dependency("know_folders", .{
+        .target = target,
+        .optimize = optimize,
+    });
+
     const exe_mod = b.createModule(.{
         .root_source_file = b.path("src/main.zig"),
         .target = target,
@@ -34,6 +39,7 @@ pub fn build(b: *std.Build) void {
             .{ .name = "lsp", .module = lsp_dep.module("lsp") },
             .{ .name = "zio", .module = zio_dep.module("zio") },
             .{ .name = "zts", .module = zts_dep.module("tree_sitter") },
+            .{ .name = "kf", .module = known_folders_dep.module("know-folders") },
         },
     });
 
