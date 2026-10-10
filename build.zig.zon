@@ -1,7 +1,7 @@
 .{
-    .name = .uslp,
+    .name = .ulsp,
     .version = "0.0.0",
-    .fingerprint = 0xb25f0c2c23384402,
+    .fingerprint = 0x687fe6ff224a605c,
     .minimum_zig_version = "0.17.0",
     .dependencies = .{
         .zlua = .{

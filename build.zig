@@ -53,7 +53,7 @@ pub fn build(b: *std.Build) void {
     });
 
     const exe = b.addExecutable(.{
-        .name = "uslp",
+        .name = "ulsp",
         .root_module = exe_mod,
     });
 
@@ -78,7 +78,7 @@ pub fn build(b: *std.Build) void {
     test_step.dependOn(&run_exe_tests.step);
 
     const exe_check = b.addExecutable(.{
-        .name = "uslp",
+        .name = "ulsp",
         .root_module = exe_mod,
     });
 
