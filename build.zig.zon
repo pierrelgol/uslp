@@ -2,35 +2,23 @@
     .name = .ulsp,
     .version = "0.0.0",
     .fingerprint = 0x687fe6ff224a605c,
-    .minimum_zig_version = "0.17.0",
+    .minimum_zig_version = "0.16.0",
     .dependencies = .{
         .zlua = .{
-            .url = "git+https://github.com/natecraddock/ziglua#8b2c14e0f9f89a9407dd7dd91752c7d8fd03cb62",
-            .hash = "zlua-0.1.0-hGRpC8yYBQAtI5hy60lb1vK9Tc7s-Ouu0aMFe2Kdc3_s",
+            .url = "git+https://github.com/natecraddock/ziglua#89826d2c159b49dcf5ea79cca330d0783b21725d",
+            .hash = "zlua-0.1.0-hGRpC3uUBQBTSXpG0I-9JJmjpQUEctKKWdsAo1S4PrvZ",
         },
         .lsp_kit = .{
-            .url = "git+https://github.com/pierrelgol/lsp-kit.git#f49513f0aa43624f38daf63d5a1f4cc206e2e6c8",
-            .hash = "lsp_kit-0.1.0-bi_PL_Q1DAC7TzpARzQluWK89soCEqvircKxmmbANEIY",
+            .url = "git+https://github.com/pierrelgol/lsp-kit.git#b886a2b0d5cee85ecbcc3089b863f7517cc9ff7f",
+            .hash = "lsp_kit-0.1.0-bi_PL3IyDACfp1xdTnkiOHEok2YpPCCCJHuuOcNzjl1D",
         },
         .zio = .{
             .url = "git+https://github.com/lalinsky/zio?ref=v0.19.0#281d969fdefe04f2e8b28d1f45fac0011f881c73",
             .hash = "zio-0.19.0-xHbVVE3ZKwCUJskjZ2stxrVnqb9GnnFr2FmLmrGLLJB9",
         },
         .tree_sitter = .{
-            .url = "git+https://github.com/pierrelgol/zig-tree-sitter#2ffef82a12d0305e646ade0e67c693cabc661e05",
-            .hash = "tree_sitter-0.26.0-8heIf1HEAQCVBaR2wlDhGTw16Ttn1bzERVIwlzNcyO6b",
-        },
-        .known_folders = .{
-            .url = "git+https://github.com/ziglibs/known-folders.git#6da0d0c41b78b9ed2d34fa364fcb81b5ebece6c4",
-            .hash = "known_folders-0.0.0-Fy-PJiDLAAB98m3uYUzatrTb2mO2fpvwx2zpSroEtfbO",
-        },
-        .toml = .{
-            .url = "git+https://github.com/sam701/zig-toml#c661327bd9f02f774426c4fe78f60621411b7173",
-            .hash = "toml-0.3.0-bV14BRmkAQDSILPPyXc31aAXPtJa1Uh8Frug3i6InAUc",
-        },
-        .glob = .{
-            .url = "https://github.com/xcaeser/glob.zig/archive/v0.2.0.tar.gz",
-            .hash = "glob-0.2.0-AymqdN9RAAAqrBDM-nFylVQk_aBtQkbukERfW1ALqIfz",
+            .url = "git+https://github.com/tree-sitter/zig-tree-sitter#b562510b5563dcf3b7fcac4a5fe9d60834c84667",
+            .hash = "tree_sitter-0.26.0-8heIf-vDAQDh0HhAAUVwVZFmLrwSKMZl5gRaVFqtas0W",
         },
     },
     .paths = .{
